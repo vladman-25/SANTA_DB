@@ -1,0 +1,20 @@
+MAN ANDREI VLAD 321CD
+
+- am inceput etapa prin intializarea unui repo nou si copierea celui de la etapa 1 aici
+- am updatat citirea cu noile campuri de bonus, elf si strategy
+
+- am modificat pachetul strategy pentru a deveni StrategyFactory, clasa utilizata
+pentru calcularea scorului, adaugand acum si bonusul daca este cazul
+- am adaugat in clasa Child o metoda pentru bonusul elfilor white black si pink,
+fara yellow, pentru ca acestia depind de buget
+- am creeat strategiile pentru cadouri, reutilizand cu mici schimbari codul de la strategia ID,
+modificarile importante fiind la nivelul sortarii copiiilor
+- am creeat o metoda pentru elful yellow, care cauta un cadou potrivit pentru copiii
+care nu au primit nimic
+
+- am refacut similar ca la ResultChildren si metoda de output pentru Cadouri deoarece era afisat si campul
+quantity
+
+- acestea sunt modificarile aduse la etapa a doua
+- considerand si prima etapa am 4 strategii, Singleton, Builder, Strategy si Factory (cea din urma fiind
+implementata acum)
