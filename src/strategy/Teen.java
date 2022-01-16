@@ -20,7 +20,10 @@ public final class Teen implements CalculateNiceScoreStrategy {
             k++;
         }
         Double avgScore = sum / (niceScores.size() * (niceScores.size() + 1) / 2);
-        avgScore += (avgScore * niceBonus / 100) % 10;
+        avgScore += (avgScore * niceBonus / 100);
+        if (avgScore > 10.0) {
+            avgScore = 10.0;
+        }
         return avgScore;
     }
 }

@@ -120,13 +120,13 @@ public final class InputReader {
                 finalArray.add(new Child.Builder(
                 Integer.parseInt(((JSONObject) object).get(Constants.ID).toString()),
                 Double.parseDouble(((JSONObject) object).get(Constants.NICE_SCORE).toString()),
-            convertJSONArray((JSONArray) ((JSONObject) object).get(Constants.GIFTS_PREFERENCES)))
+                convertJSONArray((JSONArray) ((JSONObject) object).get(Constants.GIFTS_PREFERENCES)),
+                 (String) ((JSONObject) object).get("elf"))
                 .lastNameBuilder((String) ((JSONObject) object).get(Constants.LAST_NAME))
                 .firstNameBuilder((String) ((JSONObject) object).get(Constants.FIRST_NAME))
                 .ageBuilder(Integer.parseInt(((JSONObject) object).get(Constants.AGE).toString()))
                 .cityBuilder((String) ((JSONObject) object).get(Constants.CITY))
                 .niceScoreBonusBuilder(Integer.parseInt(((JSONObject) object).get("niceScoreBonus").toString()))
-                .elfBuilder((String) ((JSONObject) object).get("elf"))
                 .build());
 
             }
@@ -151,7 +151,8 @@ public final class InputReader {
                                 ? Double.parseDouble(((JSONObject) object).
                                 get(Constants.NICE_SCORE).toString()) : -1.0,
                         convertJSONArray((JSONArray) ((JSONObject) object).
-                                get(Constants.GIFTS_PREFERENCES)))
+                                get(Constants.GIFTS_PREFERENCES)),
+                        (String) ((JSONObject) object).get("elf"))
                         .build()
                 );
             }

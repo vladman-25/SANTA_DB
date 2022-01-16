@@ -112,8 +112,8 @@
         "price" : 15.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       } ]
     }, {
@@ -131,8 +131,8 @@
         "price" : 200.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Teddy Bear",
+        "price" : 5.0,
         "category" : "Toys"
       }, {
         "productName" : "Puzzle",

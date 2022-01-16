@@ -4,20 +4,22 @@ import common.Constants;
 import data.Child;
 import data.Database;
 import data.Gift;
+import enums.Ages;
 import result.Result;
 import result.ResultArray;
 import result.ResultChildren;
-import enums.Ages;
 import result.ResultGift;
 import strategy.Baby;
 import strategy.Kid;
 import strategy.Teen;
+import strategyGifts.IdStrategy;
+import strategyGifts.NiceScoreCityStrategy;
+import strategyGifts.NiceScoreStrategy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 public final class Simulation {
@@ -39,6 +41,7 @@ public final class Simulation {
 
             Double currentBudget = 0.0;
             if (yearNumber != 0) {
+                updateGifts(yearNumber);
                 currentBudget = Double.valueOf(Database.getDatabase().getAnnualChanges().
                         get(yearNumber - 1).getNewSantaBudget());
                 updateChildren(yearNumber);
@@ -98,8 +101,23 @@ public final class Simulation {
                 }
                 budgetMap.put(entry.getKey(), budget);
             }
+            HashMap<Integer, ArrayList<Gift>> finalGifts_og;
+            if (yearNumber == 0) {
+                finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
+            } else {
+                if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("id")) {
+                    finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
+                } else if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("niceScore")) {
+                    finalGifts_og = new NiceScoreStrategy().getGiftsByStrategy(budgetMap);
+                } else if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("niceScoreCity")) {
+                    finalGifts_og = new NiceScoreCityStrategy().getGiftsByStrategy(budgetMap);
+                } else {
+                    finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
+                }
 
-            HashMap<Integer, ArrayList<Gift>> finalGifts_og = calculatePresents(budgetMap);
+            }
+
+
             HashMap<Integer, ArrayList<ResultGift>> finalGifts = new HashMap<Integer, ArrayList<ResultGift>>();
             for (Map.Entry<Integer, ArrayList<Gift>> entry : finalGifts_og.entrySet()) {
                 ArrayList<ResultGift> newGiftList = new ArrayList<>();
@@ -108,7 +126,6 @@ public final class Simulation {
                 }
                 finalGifts.put(entry.getKey(), newGiftList);
             }
-
 
             for (Child child : Database.getDatabase().getInitialChildren()) {
 
@@ -164,6 +181,7 @@ public final class Simulation {
                         Database.getDatabase()
                                 .getScores().get(child1.getId()).add(child.getNiceScore());
                     }
+                    child1.setElf(child.getElf());
                 }
             }
         }
@@ -230,48 +248,10 @@ public final class Simulation {
         }
     }
 
-    /**
-     *
-     * @param budgetMap
-     * @return
-     */
-    public static HashMap<Integer, ArrayList<Gift>>
-    calculatePresents(final HashMap<Integer, Double> budgetMap) {
-
-        HashMap<Integer, ArrayList<Gift>> giftsMap = new HashMap<Integer, ArrayList<Gift>>();
-        for (Child child : Database.getDatabase().getInitialChildren()) {
-            Double childBudget = budgetMap.get(child.getId());
-
-            ArrayList<Gift> childGifts = new ArrayList<Gift>();
-
-            for (String preference : child.getGiftsPreferences()) {
-
-                ArrayList<Gift> tempGiftsByPreference = new ArrayList<Gift>();
-                for (Gift gift : Database.getDatabase().getInitialGifts()) {
-                    if ((Objects.equals(gift.getCategory(), preference))
-                            && (Double.compare(gift.getPrice(), childBudget) <= 0)
-                            && (gift.getQuantity() > 0)) {
-                        tempGiftsByPreference.add(gift);
-                    }
-                }
-                tempGiftsByPreference.sort((o1, o2) -> {
-                    if (Double.compare(o1.getPrice(), o2.getPrice()) > 0) {
-                        return 1;
-                    }
-                    if (Double.compare(o1.getPrice(), o2.getPrice()) < 0) {
-                        return -1;
-                    }
-                    return 0;
-                });
-                if (tempGiftsByPreference.size() != 0) {
-                    childGifts.add(tempGiftsByPreference.get(0));
-                    tempGiftsByPreference.get(0).setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
-                    childBudget -= tempGiftsByPreference.get(0).getPrice();
-                }
-            }
-            giftsMap.put(child.getId(), childGifts);
-        }
-        return giftsMap;
+    public static void updateGifts(final int yearNumber) {
+        ArrayList<Gift> tempGifts = Database.getDatabase().getInitialGifts();
+        tempGifts.addAll(Database.getDatabase().getAnnualChanges().get(yearNumber - 1).getNewGifts());
+        Database.getDatabase().setInitialGifts(tempGifts);
     }
 
 

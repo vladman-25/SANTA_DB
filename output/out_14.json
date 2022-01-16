@@ -66,8 +66,8 @@
       "niceScoreHistory" : [ 7.0, 1.0 ],
       "assignedBudget" : 94.94999999999999,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Dress",
@@ -85,9 +85,13 @@
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 221.54999999999998,
       "receivedGifts" : [ {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Teddy Bear",
+        "price" : 5.0,
         "category" : "Toys"
+      }, {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
       } ]
     } ]
   }, {
@@ -102,6 +106,10 @@
       "niceScoreHistory" : [ 4.0, 3.0, 9.0 ],
       "assignedBudget" : 324.6153846153846,
       "receivedGifts" : [ {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -131,7 +139,11 @@
       "averageScore" : 7.0,
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 227.23076923076923,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      } ]
     } ]
   }, {
     "children" : [ {
@@ -145,6 +157,10 @@
       "niceScoreHistory" : [ 4.0, 3.0, 9.0, 6.0 ],
       "assignedBudget" : 186.65625,
       "receivedGifts" : [ {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -185,7 +201,11 @@
       "averageScore" : 9.0,
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 305.4375,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      } ]
     } ]
   } ]
 }

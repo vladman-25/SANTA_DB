@@ -9,7 +9,7 @@
       "giftsPreferences" : [ "Sweets", "Toys", "Board Games" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0 ],
-      "assignedBudget" : 111.81818181818181,
+      "assignedBudget" : 114.19098143236073,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -30,9 +30,9 @@
       "city" : "Cluj-Napoca",
       "age" : 17,
       "giftsPreferences" : [ "Sweets", "Books", "Technology", "Toys" ],
-      "averageScore" : 10.8,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 172.51948051948054,
+      "assignedBudget" : 163.12997347480106,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -59,7 +59,7 @@
       "giftsPreferences" : [ "Sweets", "Books", "Technology", "Board Games" ],
       "averageScore" : 7.7,
       "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 123.0,
+      "assignedBudget" : 125.61007957559683,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -82,7 +82,7 @@
       "giftsPreferences" : [ "Sweets", "Books" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 207.66233766233768,
+      "assignedBudget" : 212.0689655172414,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -103,7 +103,7 @@
       "giftsPreferences" : [ "Sweets", "Toys", "Board Games" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
-      "assignedBudget" : 145.1939291736931,
+      "assignedBudget" : 207.41989881956155,
       "receivedGifts" : [ {
         "productName" : "Bag of Candy",
         "price" : 20.0,
@@ -172,7 +172,7 @@
       "giftsPreferences" : [ "Toys", "Sweets", "Books" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 269.64586846543,
+      "assignedBudget" : 145.1939291736931,
       "receivedGifts" : [ {
         "productName" : "Doll",
         "price" : 10.0,
@@ -193,7 +193,7 @@
       "giftsPreferences" : [ "Books", "Toys", "Sweets", "Board Games" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 8.0, 8.0 ],
-      "assignedBudget" : 116.4066852367688,
+      "assignedBudget" : 190.12738853503183,
       "receivedGifts" : [ {
         "productName" : "Doll",
         "price" : 10.0,
@@ -212,7 +212,7 @@
       "giftsPreferences" : [ "Books", "Board Games", "Toys", "Sweets", "Technology" ],
       "averageScore" : 5.866666666666666,
       "niceScoreHistory" : [ 7.0, 4.0, 5.0 ],
-      "assignedBudget" : 97.55988857938718,
+      "assignedBudget" : 111.54140127388534,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,
@@ -231,7 +231,7 @@
       "giftsPreferences" : [ "Books", "Technology", "Board Games", "Toys", "Sweets" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 5.0 ],
-      "assignedBudget" : 216.18384401114207,
+      "assignedBudget" : 133.0891719745223,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
@@ -252,9 +252,9 @@
       "city" : "Constanta",
       "age" : 12,
       "giftsPreferences" : [ "Books" ],
-      "averageScore" : 16.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0 ],
-      "assignedBudget" : 345.8941504178273,
+      "assignedBudget" : 247.16560509554137,
       "receivedGifts" : [ ]
     }, {
       "id" : 5,
@@ -265,7 +265,7 @@
       "giftsPreferences" : [ "Sweets", "Books", "Board Games" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 99.77715877437325,
+      "assignedBudget" : 114.07643312101911,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,
@@ -280,10 +280,14 @@
       "city" : "Cluj-Napoca",
       "age" : 5,
       "giftsPreferences" : [ "Sweets", "Books", "Toys", "Board Games" ],
-      "averageScore" : 12.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 8.0, 8.0 ],
-      "assignedBudget" : 187.8040778064214,
+      "assignedBudget" : 241.70255890549785,
       "receivedGifts" : [ {
+        "productName" : "Chocolate",
+        "price" : 15.0,
+        "category" : "Sweets"
+      }, {
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
@@ -301,15 +305,19 @@
       "giftsPreferences" : [ "Toys", "Board Games", "Books", "Sweets", "Technology" ],
       "averageScore" : 5.225,
       "niceScoreHistory" : [ 7.0, 4.0, 5.0, 3.0 ],
-      "assignedBudget" : 116.81860792125613,
+      "assignedBudget" : 126.28958702812263,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
       }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
+      }, {
+        "productName" : "Chocolate",
+        "price" : 15.0,
+        "category" : "Sweets"
       } ]
     }, {
       "id" : 3,
@@ -320,8 +328,12 @@
       "giftsPreferences" : [ "Sweets", "Books", "Technology", "Board Games", "Toys" ],
       "averageScore" : 7.666666666666667,
       "niceScoreHistory" : [ 8.0, 5.0, 10.0 ],
-      "assignedBudget" : 222.83102882587298,
+      "assignedBudget" : 240.89688370914624,
       "receivedGifts" : [ {
+        "productName" : "Chocolate",
+        "price" : 15.0,
+        "category" : "Sweets"
+      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
@@ -330,8 +342,8 @@
         "price" : 30.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Car",
-        "price" : 20.0,
+        "productName" : "Castle",
+        "price" : 15.0,
         "category" : "Toys"
       } ]
     }, {
@@ -341,9 +353,9 @@
       "city" : "Constanta",
       "age" : 13,
       "giftsPreferences" : [ "Books" ],
-      "averageScore" : 10.666666666666668,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0, 5.0 ],
-      "assignedBudget" : 310.02577923599716,
+      "assignedBudget" : 314.2133265771472,
       "receivedGifts" : [ ]
     } ]
   } ]

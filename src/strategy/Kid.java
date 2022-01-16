@@ -18,7 +18,10 @@ public final class Kid implements CalculateNiceScoreStrategy {
             sum += score;
         }
         Double avgScore = sum / niceScores.size();
-        avgScore += (avgScore * niceBonus / 100) % 10;
+        avgScore += (avgScore * niceBonus / 100);
+        if (avgScore > 10.0) {
+            avgScore = 10.0;
+        }
         return avgScore;
     }
 }

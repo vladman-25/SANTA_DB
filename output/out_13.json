@@ -70,8 +70,8 @@
       "niceScoreHistory" : [ 5.0, 0.0 ],
       "assignedBudget" : 16.046511627906977,
       "receivedGifts" : [ {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Castle",
+        "price" : 15.0,
         "category" : "Toys"
       } ]
     }, {
@@ -104,8 +104,8 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 57.76744186046511,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Monopoly",
@@ -137,8 +137,8 @@
         "price" : 15.0,
         "category" : "Toys"
       }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -164,8 +164,8 @@
         "price" : 30.0,
         "category" : "Books"
       }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       } ]
     } ]

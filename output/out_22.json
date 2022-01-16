@@ -106,7 +106,7 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Technology", "Toys" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 180.18518518518522,
+      "assignedBudget" : 257.40740740740745,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -133,7 +133,7 @@
       "giftsPreferences" : [ "Board Games" ],
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 7.0, 3.0 ],
-      "assignedBudget" : 99.10185185185188,
+      "assignedBudget" : 141.5740740740741,
       "receivedGifts" : [ {
         "productName" : "Puzzle",
         "price" : 50.0,
@@ -148,7 +148,7 @@
       "giftsPreferences" : [ "Sweets", "Clothes" ],
       "averageScore" : 6.8,
       "niceScoreHistory" : [ 2.0, 5.0 ],
-      "assignedBudget" : 227.5481481481482,
+      "assignedBudget" : 175.03703703703707,
       "receivedGifts" : [ {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -192,11 +192,11 @@
       "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology" ],
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 45.71428571428572,
+      "assignedBudget" : 60.888433981576256,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 1,
@@ -207,11 +207,15 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Toys", "Technology" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 58.18181818181819,
+      "assignedBudget" : 110.70624360286592,
       "receivedGifts" : [ {
         "productName" : "Bag of Candy",
         "price" : 20.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
       }, {
         "productName" : "Castle",
         "price" : 15.0,
@@ -226,11 +230,15 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 7.0, 3.0 ],
-      "assignedBudget" : 32.00000000000001,
+      "assignedBudget" : 46.83725690890481,
       "receivedGifts" : [ {
         "productName" : "Bag of Candy",
         "price" : 20.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
       } ]
     }, {
       "id" : 3,
@@ -241,12 +249,8 @@
       "giftsPreferences" : [ "Sweets", "Clothes" ],
       "averageScore" : 4.25,
       "niceScoreHistory" : [ 2.0, 5.0, 1.0 ],
-      "assignedBudget" : 45.922077922077925,
-      "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      } ]
+      "assignedBudget" : 36.19242579324463,
+      "receivedGifts" : [ ]
     }, {
       "id" : 4,
       "lastName" : "Pop",
@@ -256,7 +260,7 @@
       "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 2.0 ],
-      "assignedBudget" : 83.11688311688313,
+      "assignedBudget" : 59.61105424769704,
       "receivedGifts" : [ {
         "productName" : "Puzzle",
         "price" : 50.0,
@@ -271,7 +275,7 @@
       "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
       "averageScore" : 3.6,
       "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 20.945454545454545,
+      "assignedBudget" : 21.459979529170933,
       "receivedGifts" : [ ]
     }, {
       "id" : 6,
@@ -280,9 +284,9 @@
       "city" : "Iasi",
       "age" : 14,
       "giftsPreferences" : [ "Technology", "Sweets", "Books" ],
-      "averageScore" : 11.2,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 93.0909090909091,
+      "assignedBudget" : 85.15864892528148,
       "receivedGifts" : [ {
         "productName" : "Twilight",
         "price" : 30.0,
@@ -297,9 +301,9 @@
       "city" : "Constanta",
       "age" : 5,
       "giftsPreferences" : [ "Books", "Board Games", "Sweets", "Toys", "Technology" ],
-      "averageScore" : 14.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 64.08158871965986,
+      "assignedBudget" : 71.38240996416191,
       "receivedGifts" : [ {
         "productName" : "Twilight",
         "price" : 30.0,
@@ -318,8 +322,12 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
       "averageScore" : 3.666666666666667,
       "niceScoreHistory" : [ 7.0, 3.0, 0.0 ],
-      "assignedBudget" : 16.783273236101394,
-      "receivedGifts" : [ ]
+      "assignedBudget" : 26.173550320192703,
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 3,
       "lastName" : "Pop",
@@ -329,7 +337,7 @@
       "giftsPreferences" : [ "Technology", "Sweets", "Clothes" ],
       "averageScore" : 5.27,
       "niceScoreHistory" : [ 2.0, 5.0, 1.0, 4.0 ],
-      "assignedBudget" : 44.79826166514181,
+      "assignedBudget" : 26.33297103577933,
       "receivedGifts" : [ ]
     }, {
       "id" : 4,
@@ -340,7 +348,7 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Technology" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 2.0 ],
-      "assignedBudget" : 65.38937624455089,
+      "assignedBudget" : 92.79713295341048,
       "receivedGifts" : [ {
         "productName" : "Puzzle",
         "price" : 50.0,
@@ -355,7 +363,7 @@
       "giftsPreferences" : [ "Books", "Technology", "Board Games", "Sweets" ],
       "averageScore" : 3.6,
       "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 16.478122813626825,
+      "assignedBudget" : 25.697667587098287,
       "receivedGifts" : [ ]
     }, {
       "id" : 6,
@@ -364,9 +372,9 @@
       "city" : "Iasi",
       "age" : 15,
       "giftsPreferences" : [ "Toys", "Technology", "Sweets", "Books" ],
-      "averageScore" : 11.2,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 73.23610139389699,
+      "assignedBudget" : 71.38240996416191,
       "receivedGifts" : [ {
         "productName" : "Car",
         "price" : 20.0,
@@ -385,7 +393,7 @@
       "giftsPreferences" : [ "Sweets", "Toys" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 65.38937624455089,
+      "assignedBudget" : 71.38240996416191,
       "receivedGifts" : [ {
         "productName" : "Car",
         "price" : 20.0,
@@ -400,7 +408,7 @@
       "giftsPreferences" : [ "Technology", "Clothes" ],
       "averageScore" : 4.2,
       "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 19.22447661589796,
+      "assignedBudget" : 20.986428529463602,
       "receivedGifts" : [ ]
     } ]
   }, {
@@ -411,12 +419,12 @@
       "city" : "Constanta",
       "age" : 6,
       "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games", "Sweets" ],
-      "averageScore" : 14.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 29.77766798418972,
+      "assignedBudget" : 33.62493165664298,
       "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       } ]
     }, {
@@ -428,7 +436,7 @@
       "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
       "averageScore" : 2.31,
       "niceScoreHistory" : [ 7.0, 3.0, 0.0, 2.0 ],
-      "assignedBudget" : 4.913315217391304,
+      "assignedBudget" : 7.767359212684528,
       "receivedGifts" : [ ]
     }, {
       "id" : 3,
@@ -439,7 +447,7 @@
       "giftsPreferences" : [ "Technology", "Sweets", "Clothes" ],
       "averageScore" : 3.5133333333333336,
       "niceScoreHistory" : [ 2.0, 5.0, 1.0, 4.0, 0.0 ],
-      "assignedBudget" : 13.878013833992094,
+      "assignedBudget" : 11.8135593220339,
       "receivedGifts" : [ ]
     }, {
       "id" : 4,
@@ -450,7 +458,7 @@
       "giftsPreferences" : [ "Sweets", "Toys", "Board Games", "Technology" ],
       "averageScore" : 5.0,
       "niceScoreHistory" : [ 8.0, 2.0, 0.0 ],
-      "assignedBudget" : 15.19268774703557,
+      "assignedBudget" : 16.81246582832149,
       "receivedGifts" : [ ]
     }, {
       "id" : 5,
@@ -461,7 +469,7 @@
       "giftsPreferences" : [ "Technology", "Sweets", "Books", "Board Games" ],
       "averageScore" : 3.6,
       "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 7.657114624505928,
+      "assignedBudget" : 12.104975396391472,
       "receivedGifts" : [ ]
     }, {
       "id" : 6,
@@ -470,9 +478,9 @@
       "city" : "Iasi",
       "age" : 16,
       "giftsPreferences" : [ "Board Games", "Toys", "Technology", "Sweets", "Books" ],
-      "averageScore" : 11.2,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 34.03162055335968,
+      "assignedBudget" : 33.62493165664298,
       "receivedGifts" : [ {
         "productName" : "Bike",
         "price" : 25.0,
@@ -487,8 +495,12 @@
       "giftsPreferences" : [ "Sweets", "Toys" ],
       "averageScore" : 6.75,
       "niceScoreHistory" : [ 3.0, 6.0 ],
-      "assignedBudget" : 20.51012845849802,
-      "receivedGifts" : [ ]
+      "assignedBudget" : 29.50587752870421,
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 8,
       "lastName" : "Pop",
@@ -498,7 +510,7 @@
       "giftsPreferences" : [ "Sweets", "Toys", "Books", "Technology", "Clothes" ],
       "averageScore" : 4.2,
       "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 8.933300395256916,
+      "assignedBudget" : 18.359212684527066,
       "receivedGifts" : [ ]
     }, {
       "id" : 9,
@@ -509,7 +521,7 @@
       "giftsPreferences" : [ "Sweets", "Toys", "Books" ],
       "averageScore" : 3.4,
       "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 7.231719367588932,
+      "assignedBudget" : 8.002733734281028,
       "receivedGifts" : [ ]
     } ]
   } ]

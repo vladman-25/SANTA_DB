@@ -39,10 +39,12 @@ public final class Child {
 
         public Builder(final int id,
                      final Double niceScore,
-                     final ArrayList<String> giftsPreferences) {
+                     final ArrayList<String> giftsPreferences,
+                     final String elf) {
             this.id = id;
             this.niceScore = niceScore;
             this.giftsPreferences = giftsPreferences;
+            this.elf = elf;
         }
 
         /**
@@ -97,11 +99,6 @@ public final class Child {
             this.niceScoreBonus = newBonus;
             return this;
         }
-        public Builder elfBuilder(final String newElf) {
-            this.elf = newElf;
-            return this;
-        }
-
 
     }
 

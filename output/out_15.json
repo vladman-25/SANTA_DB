@@ -7,9 +7,9 @@
       "city" : "Constanta",
       "age" : 5,
       "giftsPreferences" : [ "Books", "Clothes", "Toys" ],
-      "averageScore" : 16.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 255.3846153846154,
+      "assignedBudget" : 207.5,
       "receivedGifts" : [ {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -32,7 +32,7 @@
       "giftsPreferences" : [ "Clothes" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 159.6153846153846,
+      "assignedBudget" : 207.5,
       "receivedGifts" : [ {
         "productName" : "Dress",
         "price" : 45.0,
@@ -47,9 +47,9 @@
       "city" : "Constanta",
       "age" : 6,
       "giftsPreferences" : [ "Toys", "Books", "Clothes" ],
-      "averageScore" : 16.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 361.84615384615387,
+      "assignedBudget" : 294.0,
       "receivedGifts" : [ {
         "productName" : "Castle",
         "price" : 15.0,
@@ -72,7 +72,7 @@
       "giftsPreferences" : [ "Clothes", "Toys" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 226.15384615384616,
+      "assignedBudget" : 294.0,
       "receivedGifts" : [ {
         "productName" : "Dress",
         "price" : 45.0,
@@ -91,9 +91,9 @@
       "city" : "Constanta",
       "age" : 7,
       "giftsPreferences" : [ "Clothes", "Sweets", "Toys", "Books" ],
-      "averageScore" : 16.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 356.9230769230769,
+      "assignedBudget" : 290.0,
       "receivedGifts" : [ {
         "productName" : "Dress",
         "price" : 45.0,
@@ -120,7 +120,7 @@
       "giftsPreferences" : [ "Clothes", "Sweets", "Toys" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 5.0, 7.0 ],
-      "assignedBudget" : 223.07692307692307,
+      "assignedBudget" : 290.0,
       "receivedGifts" : [ {
         "productName" : "Dress",
         "price" : 45.0,
@@ -139,9 +139,9 @@
       "city" : "Constanta",
       "age" : 8,
       "giftsPreferences" : [ "Books", "Clothes", "Toys", "Sweets" ],
-      "averageScore" : 11.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 3.0 ],
-      "assignedBudget" : 217.38095238095238,
+      "assignedBudget" : 207.5,
       "receivedGifts" : [ {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -164,7 +164,7 @@
       "giftsPreferences" : [ "Clothes", "Sweets", "Toys" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 5.0, 7.0, 6.0 ],
-      "assignedBudget" : 197.61904761904762,
+      "assignedBudget" : 207.5,
       "receivedGifts" : [ {
         "productName" : "Dress",
         "price" : 45.0,
