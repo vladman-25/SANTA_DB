@@ -1,6 +1,7 @@
 package data;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import common.Constants;
 
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public final class Child {
         return elf;
     }
 
-    public void setElf(String elf) {
+    public void setElf(final String elf) {
         this.elf = elf;
     }
 
@@ -95,6 +96,11 @@ public final class Child {
             return this;
         }
 
+        /**
+         *
+         * @param newBonus
+         * @return
+         */
         public Builder niceScoreBonusBuilder(final Integer newBonus) {
             this.niceScoreBonus = newBonus;
             return this;
@@ -106,7 +112,7 @@ public final class Child {
         return niceScoreBonus;
     }
 
-    public void setNiceScoreBonus(int niceScoreBonus) {
+    public void setNiceScoreBonus(final int niceScoreBonus) {
         this.niceScoreBonus = niceScoreBonus;
     }
 
@@ -179,15 +185,20 @@ public final class Child {
         this.giftsPreferences = giftsPreferences;
     }
 
-    public Double elfModification(Double budget) {
-        if(getElf().equals("white")) {
+    /**
+     *
+     * @param budget
+     * @return
+     */
+    public Double elfModification(final Double budget) {
+        if (getElf().equals("white")) {
             return 0.0;
         }
-        if(getElf().equals("black")) {
-            return  -budget * 30 /100;
+        if (getElf().equals("black")) {
+            return  -budget * Constants.ELF_30 / Constants.ELF_100;
         }
-        if(getElf().equals("pink")) {
-            return  budget * 30 /100;
+        if (getElf().equals("pink")) {
+            return  budget * Constants.ELF_30 / Constants.ELF_100;
         }
         return 0.0;
     }

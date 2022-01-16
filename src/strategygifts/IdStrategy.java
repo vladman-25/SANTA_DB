@@ -1,4 +1,4 @@
-package strategyGifts;
+package strategygifts;
 
 import data.Child;
 import data.Database;
@@ -8,13 +8,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
-public class IdStrategy implements GiftsStrategy {
+public final class IdStrategy implements GiftsStrategy {
 
     public IdStrategy() {
     }
 
     @Override
-    public HashMap<Integer, ArrayList<Gift>> getGiftsByStrategy(final HashMap<Integer, Double> budgetMap) {
+    public HashMap<Integer, ArrayList<Gift>>
+    getGiftsByStrategy(final HashMap<Integer, Double> budgetMap) {
         HashMap<Integer, ArrayList<Gift>> giftsMap = new HashMap<Integer, ArrayList<Gift>>();
         for (Child child : Database.getDatabase().getInitialChildren()) {
             Double childBudget = budgetMap.get(child.getId());
@@ -42,7 +43,8 @@ public class IdStrategy implements GiftsStrategy {
                 });
                 if (tempGiftsByPreference.size() != 0) {
                     childGifts.add(tempGiftsByPreference.get(0));
-                    tempGiftsByPreference.get(0).setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
+                    tempGiftsByPreference.get(0)
+                            .setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
                     childBudget -= tempGiftsByPreference.get(0).getPrice();
                 }
             }

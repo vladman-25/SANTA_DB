@@ -13,7 +13,7 @@ public final class Change {
         return strategy;
     }
 
-    public void setStrategy(String strategy) {
+    public void setStrategy(final String strategy) {
         this.strategy = strategy;
     }
 

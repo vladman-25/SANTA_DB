@@ -44,6 +44,12 @@ public final class Constants {
     public static final Integer KID_LIMIT = 12;
     public static final Integer TEEN_LIMIT = 18;
 
+    public static final Integer ELF_30 = 30;
+    public static final Integer ELF_100 = 100;
+
+    public static final Integer PERCENT_100 = 100;
+    public static final Double MAX_SCORE = 10.0;
+
     private Constants() {
         //constructor for checkstyle
     }

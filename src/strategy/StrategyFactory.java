@@ -7,8 +7,13 @@ import tasks.Utils;
 
 import java.util.ArrayList;
 
-public class StrategyFactory {
-    public Double createStrategy(int indexOfChild) {
+public final class StrategyFactory {
+    /**
+     *
+     * @param indexOfChild
+     * @return
+     */
+    public Double createStrategy(final int indexOfChild) {
 
         Child tempChild = Database.getDatabase().getInitialChildren().get(indexOfChild);
         ArrayList<Double> tempScoresList = Database.getDatabase()

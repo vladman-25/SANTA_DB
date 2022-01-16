@@ -1,5 +1,7 @@
 package strategy;
 
+import common.Constants;
+
 import java.util.ArrayList;
 
 public final class Teen implements CalculateNiceScoreStrategy {
@@ -20,9 +22,9 @@ public final class Teen implements CalculateNiceScoreStrategy {
             k++;
         }
         Double avgScore = sum / (niceScores.size() * (niceScores.size() + 1) / 2);
-        avgScore += (avgScore * niceBonus / 100);
-        if (avgScore > 10.0) {
-            avgScore = 10.0;
+        avgScore += (avgScore * niceBonus / Constants.PERCENT_100);
+        if (avgScore > Constants.MAX_SCORE) {
+            avgScore = Constants.MAX_SCORE;
         }
         return avgScore;
     }

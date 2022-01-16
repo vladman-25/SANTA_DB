@@ -1,6 +1,6 @@
 package result;
 
-public class ResultGift {
+public final class ResultGift {
     private String productName;
     private Double price;
     private String category;
@@ -17,7 +17,7 @@ public class ResultGift {
         return productName;
     }
 
-    public void setProductName(String productName) {
+    public void setProductName(final String productName) {
         this.productName = productName;
     }
 
@@ -25,7 +25,7 @@ public class ResultGift {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(final Double price) {
         this.price = price;
     }
 
@@ -33,7 +33,7 @@ public class ResultGift {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(final String category) {
         this.category = category;
     }
 }

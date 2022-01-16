@@ -10,11 +10,15 @@ import result.ResultArray;
 import result.ResultChildren;
 import result.ResultGift;
 import strategy.StrategyFactory;
-import strategyGifts.IdStrategy;
-import strategyGifts.NiceScoreCityStrategy;
-import strategyGifts.NiceScoreStrategy;
+import strategygifts.IdStrategy;
+import strategygifts.NiceScoreCityStrategy;
+import strategygifts.NiceScoreStrategy;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public final class Simulation {
@@ -89,43 +93,51 @@ public final class Simulation {
             for (Map.Entry<Integer, Double> entry
                     : Database.getDatabase().getAvgScores().entrySet()) {
                 Double budget = entry.getValue() * budgetUnit;
-                for(Child x : Database.getDatabase().getInitialChildren()) {
+                for (Child x : Database.getDatabase().getInitialChildren()) {
                     if (x.getId() == entry.getKey()) {
                         budget += x.elfModification(budget);
                     }
                 }
                 budgetMap.put(entry.getKey(), budget);
             }
-            HashMap<Integer, ArrayList<Gift>> finalGifts_og;
+            HashMap<Integer, ArrayList<Gift>> finalGiftsOirignal;
             if (yearNumber == 0) {
-                finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
+                finalGiftsOirignal = new IdStrategy().getGiftsByStrategy(budgetMap);
             } else {
-                finalGifts_og = switch (Database.getDatabase().getAnnualChanges().get(yearNumber - 1).getStrategy()) {
-                    case "niceScore" -> new NiceScoreStrategy().getGiftsByStrategy(budgetMap);
-                    case "niceScoreCity" -> new NiceScoreCityStrategy().getGiftsByStrategy(budgetMap);
-                    default -> new IdStrategy().getGiftsByStrategy(budgetMap);
+                finalGiftsOirignal = switch (Database.getDatabase()
+                        .getAnnualChanges().get(yearNumber - 1).getStrategy()) {
+                    case "niceScore" -> new NiceScoreStrategy()
+                            .getGiftsByStrategy(budgetMap);
+                    case "niceScoreCity" -> new NiceScoreCityStrategy()
+                            .getGiftsByStrategy(budgetMap);
+                    default -> new IdStrategy()
+                            .getGiftsByStrategy(budgetMap);
                 };
 
             }
 
             // yellow elf
             for (Child child : Database.getDatabase().getInitialChildren()) {
-                if(child.getElf().equals("yellow") && (finalGifts_og.get(child.getId()).size() == 0)) {
+                if (child.getElf().equals("yellow")
+                        && (finalGiftsOirignal.get(child.getId()).size() == 0)) {
                     ArrayList<Gift> auxGiftList = new ArrayList<Gift>();
                     Gift auxGift = yellowElfGifts(child);
                     if (auxGift != null) {
                         auxGiftList.add(auxGift);
                     }
-                    finalGifts_og.put(child.getId(),auxGiftList);
+                    finalGiftsOirignal.put(child.getId(), auxGiftList);
                 }
             }
             //
 
-            HashMap<Integer, ArrayList<ResultGift>> finalGifts = new HashMap<Integer, ArrayList<ResultGift>>();
-            for (Map.Entry<Integer, ArrayList<Gift>> entry : finalGifts_og.entrySet()) {
+            HashMap<Integer, ArrayList<ResultGift>> finalGifts =
+                    new HashMap<Integer, ArrayList<ResultGift>>();
+            for (Map.Entry<Integer, ArrayList<Gift>> entry : finalGiftsOirignal.entrySet()) {
                 ArrayList<ResultGift> newGiftList = new ArrayList<>();
-                for(Gift x : entry.getValue()) {
-                    newGiftList.add(new ResultGift(x.getProductName(), x.getPrice(), x.getCategory()));
+                for (Gift x : entry.getValue()) {
+                    newGiftList.add(new ResultGift(x.getProductName(),
+                            x.getPrice(),
+                            x.getCategory()));
                 }
                 finalGifts.put(entry.getKey(), newGiftList);
             }
@@ -238,13 +250,23 @@ public final class Simulation {
         }
     }
 
+    /**
+     *
+     * @param yearNumber
+     */
     public static void updateGifts(final int yearNumber) {
         ArrayList<Gift> tempGifts = Database.getDatabase().getInitialGifts();
-        tempGifts.addAll(Database.getDatabase().getAnnualChanges().get(yearNumber - 1).getNewGifts());
+        tempGifts.addAll(Database.getDatabase().getAnnualChanges()
+                .get(yearNumber - 1).getNewGifts());
         Database.getDatabase().setInitialGifts(tempGifts);
     }
 
-    public static Gift yellowElfGifts(Child child) {
+    /**
+     *
+     * @param child
+     * @return
+     */
+    public static Gift yellowElfGifts(final Child child) {
         ArrayList<Gift> tempGiftsByPreference = new ArrayList<Gift>();
             for (Gift gift : Database.getDatabase().getInitialGifts()) {
                 if (Objects.equals(gift.getCategory(), child.getGiftsPreferences().get(0))) {
@@ -262,9 +284,10 @@ public final class Simulation {
             return 0;
         });
 
-        if(tempGiftsByPreference.size() != 0) {
-            if(tempGiftsByPreference.get(0).getQuantity() != 0) {
-                tempGiftsByPreference.get(0).setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
+        if (tempGiftsByPreference.size() != 0) {
+            if (tempGiftsByPreference.get(0).getQuantity() != 0) {
+                tempGiftsByPreference.get(0)
+                        .setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
                 return tempGiftsByPreference.get(0);
             }
         }

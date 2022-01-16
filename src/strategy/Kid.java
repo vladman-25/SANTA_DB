@@ -1,5 +1,7 @@
 package strategy;
 
+import common.Constants;
+
 import java.util.ArrayList;
 
 public final class Kid implements CalculateNiceScoreStrategy {
@@ -18,9 +20,9 @@ public final class Kid implements CalculateNiceScoreStrategy {
             sum += score;
         }
         Double avgScore = sum / niceScores.size();
-        avgScore += (avgScore * niceBonus / 100);
-        if (avgScore > 10.0) {
-            avgScore = 10.0;
+        avgScore += (avgScore * niceBonus / Constants.PERCENT_100);
+        if (avgScore > Constants.MAX_SCORE) {
+            avgScore = Constants.MAX_SCORE;
         }
         return avgScore;
     }
