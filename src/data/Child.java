@@ -15,6 +15,16 @@ public final class Child {
     private String city;
     private Double niceScore;
     private ArrayList<String> giftsPreferences;
+    private int niceScoreBonus;
+    private String elf;
+
+    public String getElf() {
+        return elf;
+    }
+
+    public void setElf(String elf) {
+        this.elf = elf;
+    }
 
     public static final class Builder {
         private int id;
@@ -24,6 +34,8 @@ public final class Child {
         private String city;
         private Double niceScore;
         private ArrayList<String> giftsPreferences;
+        private int niceScoreBonus;
+        private String elf;
 
         public Builder(final int id,
                      final Double niceScore,
@@ -81,7 +93,24 @@ public final class Child {
             return this;
         }
 
+        public Builder niceScoreBonusBuilder(final Integer newBonus) {
+            this.niceScoreBonus = newBonus;
+            return this;
+        }
+        public Builder elfBuilder(final String newElf) {
+            this.elf = newElf;
+            return this;
+        }
 
+
+    }
+
+    public int getNiceScoreBonus() {
+        return niceScoreBonus;
+    }
+
+    public void setNiceScoreBonus(int niceScoreBonus) {
+        this.niceScoreBonus = niceScoreBonus;
     }
 
     private Child(final Builder builder) {
@@ -92,6 +121,8 @@ public final class Child {
         this.city = builder.city;
         this.niceScore = builder.niceScore;
         this.giftsPreferences = builder.giftsPreferences;
+        this.niceScoreBonus = builder.niceScoreBonus;
+        this.elf = builder.elf;
     }
 
 
@@ -149,6 +180,19 @@ public final class Child {
 
     public void setGiftsPreferences(final ArrayList<String> giftsPreferences) {
         this.giftsPreferences = giftsPreferences;
+    }
+
+    public Double elfModification(Double budget) {
+        if(getElf().equals("white")) {
+            return 0.0;
+        }
+        if(getElf().equals("black")) {
+            return  -budget * 30 /100;
+        }
+        if(getElf().equals("pink")) {
+            return  budget * 30 /100;
+        }
+        return 0.0;
     }
 
     @Override

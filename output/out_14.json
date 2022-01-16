@@ -51,10 +51,6 @@
       "niceScoreHistory" : [ 4.0, 3.0 ],
       "assignedBudget" : 316.5,
       "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -89,8 +85,8 @@
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 221.54999999999998,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       } ]
     } ]
@@ -106,17 +102,9 @@
       "niceScoreHistory" : [ 4.0, 3.0, 9.0 ],
       "assignedBudget" : 324.6153846153846,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
       } ]
     }, {
       "id" : 1,
@@ -132,10 +120,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 2,
@@ -147,15 +131,7 @@
       "averageScore" : 7.0,
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 227.23076923076923,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      } ]
+      "receivedGifts" : [ ]
     } ]
   }, {
     "children" : [ {
@@ -169,14 +145,6 @@
       "niceScoreHistory" : [ 4.0, 3.0, 9.0, 6.0 ],
       "assignedBudget" : 186.65625,
       "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -192,10 +160,6 @@
       "niceScoreHistory" : [ 7.0, 1.0, 2.0 ],
       "assignedBudget" : 84.84375,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -210,15 +174,7 @@
       "averageScore" : 4.333333333333333,
       "niceScoreHistory" : [ 7.0, 3.0 ],
       "assignedBudget" : 147.0625,
-      "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 3,
       "lastName" : "Cantemir",
@@ -229,11 +185,7 @@
       "averageScore" : 9.0,
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 305.4375,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
+      "receivedGifts" : [ ]
     } ]
   } ]
 }

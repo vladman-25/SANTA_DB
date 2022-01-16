@@ -91,10 +91,6 @@
       "niceScoreHistory" : [ 5.0, 2.0, 2.0 ],
       "assignedBudget" : 153.2,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
@@ -114,8 +110,8 @@
       "niceScoreHistory" : [ 7.0, 5.0, 7.0 ],
       "assignedBudget" : 612.8,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
+        "productName" : "Laptop",
+        "price" : 500.0,
         "category" : "Technology"
       } ]
     } ]

@@ -37,10 +37,6 @@
         "productName" : "Doll",
         "price" : 10.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
       } ]
     } ]
   }, {
@@ -55,10 +51,6 @@
       "niceScoreHistory" : [ 9.0, 3.0 ],
       "assignedBudget" : 348.1578947368421,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
@@ -81,10 +73,6 @@
         "productName" : "Doll",
         "price" : 10.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
       } ]
     } ]
   }, {
@@ -103,12 +91,12 @@
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
       }, {
-        "productName" : "Headphones",
-        "price" : 100.0,
+        "productName" : "Laptop",
+        "price" : 500.0,
         "category" : "Technology"
       } ]
     } ]

@@ -7,15 +7,26 @@ public final class Change {
     private ArrayList<Gift> newGifts;
     private ArrayList<Child> newChildren;
     private ArrayList<Child> childrenUpdates; /* 3 var constructor: id, niceScore, preferences  */
+    private String strategy;
+
+    public String getStrategy() {
+        return strategy;
+    }
+
+    public void setStrategy(String strategy) {
+        this.strategy = strategy;
+    }
 
     public Change(final int newSantaBudget,
                   final ArrayList<Gift> newGifts,
                   final ArrayList<Child> newChildren,
-                  final ArrayList<Child> childrenUpdates) {
+                  final ArrayList<Child> childrenUpdates,
+                  final String strategy) {
         this.newSantaBudget = newSantaBudget;
         this.newGifts = newGifts;
         this.newChildren = newChildren;
         this.childrenUpdates = childrenUpdates;
+        this.strategy = strategy;
     }
 
     public int getNewSantaBudget() {

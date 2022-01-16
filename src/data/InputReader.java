@@ -53,7 +53,8 @@ public final class InputReader {
                             convertJSONArrayToNormalChildren((JSONArray) ((JSONObject) jsonChange).
                                     get(Constants.NEW_CHILDREN)),
                             convertJSONArrayTo3varChildren((JSONArray) ((JSONObject) jsonChange).
-                                    get(Constants.CHILDREN_UPDATES))
+                                    get(Constants.CHILDREN_UPDATES)),
+                            (String) ((JSONObject) jsonChange).get("strategy")
                     ));
                 }
             }
@@ -97,7 +98,8 @@ public final class InputReader {
                 finalArray.add(new Gift(
                         (String) ((JSONObject) object).get(Constants.PRODUCT_NAME),
                         Double.parseDouble(((JSONObject) object).get(Constants.PRICE).toString()),
-                        (String) ((JSONObject) object).get(Constants.CATEGORY)
+                        (String) ((JSONObject) object).get(Constants.CATEGORY),
+                        Integer.parseInt(((JSONObject) object).get("quantity").toString())
                 ));
             }
             return finalArray;
@@ -123,6 +125,8 @@ public final class InputReader {
                 .firstNameBuilder((String) ((JSONObject) object).get(Constants.FIRST_NAME))
                 .ageBuilder(Integer.parseInt(((JSONObject) object).get(Constants.AGE).toString()))
                 .cityBuilder((String) ((JSONObject) object).get(Constants.CITY))
+                .niceScoreBonusBuilder(Integer.parseInt(((JSONObject) object).get("niceScoreBonus").toString()))
+                .elfBuilder((String) ((JSONObject) object).get("elf"))
                 .build());
 
             }

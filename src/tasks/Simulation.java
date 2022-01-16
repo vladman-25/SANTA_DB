@@ -8,6 +8,7 @@ import result.Result;
 import result.ResultArray;
 import result.ResultChildren;
 import enums.Ages;
+import result.ResultGift;
 import strategy.Baby;
 import strategy.Kid;
 import strategy.Teen;
@@ -89,10 +90,25 @@ public final class Simulation {
             HashMap<Integer, Double> budgetMap = new HashMap<Integer, Double>();
             for (Map.Entry<Integer, Double> entry
                     : Database.getDatabase().getAvgScores().entrySet()) {
-                budgetMap.put(entry.getKey(), entry.getValue() * budgetUnit);
+                Double budget = entry.getValue() * budgetUnit;
+                for(Child x : Database.getDatabase().getInitialChildren()) {
+                    if (x.getId() == entry.getKey()) {
+                        budget += x.elfModification(budget);
+                    }
+                }
+                budgetMap.put(entry.getKey(), budget);
             }
 
-            HashMap<Integer, ArrayList<Gift>> finalGifts = calculatePresents(budgetMap);
+            HashMap<Integer, ArrayList<Gift>> finalGifts_og = calculatePresents(budgetMap);
+            HashMap<Integer, ArrayList<ResultGift>> finalGifts = new HashMap<Integer, ArrayList<ResultGift>>();
+            for (Map.Entry<Integer, ArrayList<Gift>> entry : finalGifts_og.entrySet()) {
+                ArrayList<ResultGift> newGiftList = new ArrayList<>();
+                for(Gift x : entry.getValue()) {
+                    newGiftList.add(new ResultGift(x.getProductName(), x.getPrice(), x.getCategory()));
+                }
+                finalGifts.put(entry.getKey(), newGiftList);
+            }
+
 
             for (Child child : Database.getDatabase().getInitialChildren()) {
 
@@ -197,17 +213,18 @@ public final class Simulation {
             Child tempChild = Database.getDatabase().getInitialChildren().get(i);
             ArrayList<Double> tempScoresList = Database.getDatabase()
                     .getScores().get(tempChild.getId());
+            Integer tempBonus = tempChild.getNiceScoreBonus();
 
             if (Utils.getChildAgeEnum(tempChild) == Ages.BABY) {
                 Double score = new Baby(tempScoresList).getNiceScore();
                 Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
             }
             if (Utils.getChildAgeEnum(tempChild) == Ages.KID) {
-                Double score = new Kid(tempScoresList).getNiceScore();
+                Double score = new Kid(tempScoresList, tempBonus).getNiceScore();
                 Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
             }
             if (Utils.getChildAgeEnum(tempChild) == Ages.TEEN) {
-                Double score = new Teen(tempScoresList).getNiceScore();
+                Double score = new Teen(tempScoresList, tempBonus).getNiceScore();
                 Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
             }
         }
@@ -232,7 +249,8 @@ public final class Simulation {
                 ArrayList<Gift> tempGiftsByPreference = new ArrayList<Gift>();
                 for (Gift gift : Database.getDatabase().getInitialGifts()) {
                     if ((Objects.equals(gift.getCategory(), preference))
-                            && (Double.compare(gift.getPrice(), childBudget) <= 0)) {
+                            && (Double.compare(gift.getPrice(), childBudget) <= 0)
+                            && (gift.getQuantity() > 0)) {
                         tempGiftsByPreference.add(gift);
                     }
                 }
@@ -247,6 +265,7 @@ public final class Simulation {
                 });
                 if (tempGiftsByPreference.size() != 0) {
                     childGifts.add(tempGiftsByPreference.get(0));
+                    tempGiftsByPreference.get(0).setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
                     childBudget -= tempGiftsByPreference.get(0).getPrice();
                 }
             }

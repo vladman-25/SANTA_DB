@@ -1,7 +1,6 @@
 package result;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import data.Gift;
 
 import java.util.ArrayList;
 
@@ -19,7 +18,7 @@ public final class ResultChildren {
     private Double averageScore;
     private ArrayList<Double> niceScoreHistory;
     private Double assignedBudget;
-    private ArrayList<Gift> receivedGifts;
+    private ArrayList<ResultGift> receivedGifts;
 
     public ArrayList<String> getGiftsPreferences() {
         return giftsPreferences;
@@ -38,7 +37,7 @@ public final class ResultChildren {
                           final Double averageScore,
                           final ArrayList<Double> niceScoreHistory,
                           final Double assignedBudget,
-                          final ArrayList<Gift> receivedGifts) {
+                          final ArrayList<ResultGift> receivedGifts) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -115,11 +114,12 @@ public final class ResultChildren {
         this.assignedBudget = assignedBudget;
     }
 
-    public ArrayList<Gift> getReceivedGifts() {
+    public ArrayList<ResultGift> getReceivedGifts() {
         return receivedGifts;
     }
 
-    public void setReceivedGifts(final ArrayList<Gift> receivedGifts) {
+    public void setReceivedGifts(final ArrayList<ResultGift> receivedGifts) {
         this.receivedGifts = receivedGifts;
     }
+
 }

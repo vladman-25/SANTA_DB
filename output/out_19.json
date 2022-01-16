@@ -36,16 +36,12 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 184.03448275862067,
       "receivedGifts" : [ {
-        "productName" : "Lego",
-        "price" : 30.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -59,12 +55,12 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 204.48275862068965,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -78,12 +74,8 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 204.48275862068965,
       "receivedGifts" : [ {
-        "productName" : "Lego",
+        "productName" : "Milk and Cookies",
         "price" : 30.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
         "category" : "Sweets"
       } ]
     } ]
@@ -99,16 +91,12 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 155.88,
       "receivedGifts" : [ {
-        "productName" : "Lego",
-        "price" : 30.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -122,12 +110,12 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 173.2,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -141,17 +129,13 @@
       "niceScoreHistory" : [ 5.0, 7.0 ],
       "assignedBudget" : 103.92,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Lego",
+        "productName" : "Milk and Cookies",
         "price" : 30.0,
-        "category" : "Toys"
+        "category" : "Sweets"
       } ]
     } ]
   } ]

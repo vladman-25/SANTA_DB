@@ -148,10 +148,6 @@
       "niceScoreHistory" : [ 3.0, 10.0, 10.0 ],
       "assignedBudget" : 617.3783783783783,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
@@ -169,10 +165,6 @@
       "niceScoreHistory" : [ 9.0, 10.0, 10.0, 10.0 ],
       "assignedBudget" : 661.7716535433071,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Shoes",
         "price" : 70.0,
         "category" : "Clothes"
@@ -188,10 +180,6 @@
       "niceScoreHistory" : [ 3.0, 10.0, 10.0, 10.0 ],
       "assignedBudget" : 631.228346456693,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"

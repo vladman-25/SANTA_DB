@@ -7,9 +7,9 @@
       "city" : "Oradea",
       "age" : 13,
       "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
-      "averageScore" : 5.0,
+      "averageScore" : 5.5,
       "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 392.9545454545455,
+      "assignedBudget" : 231.93902439024387,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
@@ -30,9 +30,9 @@
       "city" : "Craiova",
       "age" : 15,
       "giftsPreferences" : [ "Toys", "Board Games" ],
-      "averageScore" : 6.0,
+      "averageScore" : 7.8,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 471.54545454545456,
+      "assignedBudget" : 610.8731707317072,
       "receivedGifts" : [ {
         "productName" : "Doll",
         "price" : 10.0,
@@ -49,9 +49,9 @@
       "city" : "Craiova",
       "age" : 10,
       "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
-      "averageScore" : 2.0,
+      "averageScore" : 2.8,
       "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 157.1818181818182,
+      "assignedBudget" : 219.28780487804875,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
@@ -60,6 +60,10 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
+      }, {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
       } ]
     }, {
       "id" : 3,
@@ -68,16 +72,16 @@
       "city" : "Brasov",
       "age" : 12,
       "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
-      "averageScore" : 9.0,
+      "averageScore" : 12.6,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 707.3181818181819,
+      "assignedBudget" : 986.7951219512192,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       }, {
         "productName" : "Monopoly",
@@ -93,9 +97,9 @@
       "city" : "Oradea",
       "age" : 14,
       "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
-      "averageScore" : 4.333333333333333,
+      "averageScore" : 4.766666666666667,
       "niceScoreHistory" : [ 5.0, 4.0 ],
-      "assignedBudget" : 19.30131004366812,
+      "assignedBudget" : 10.111111111111112,
       "receivedGifts" : [ ]
     }, {
       "id" : 1,
@@ -104,9 +108,9 @@
       "city" : "Craiova",
       "age" : 16,
       "giftsPreferences" : [ "Technology", "Toys", "Board Games" ],
-      "averageScore" : 5.333333333333333,
+      "averageScore" : 6.933333333333334,
       "niceScoreHistory" : [ 6.0, 5.0 ],
-      "assignedBudget" : 23.75545851528384,
+      "assignedBudget" : 27.31313131313132,
       "receivedGifts" : [ {
         "productName" : "Doll",
         "price" : 10.0,
@@ -119,9 +123,9 @@
       "city" : "Craiova",
       "age" : 11,
       "giftsPreferences" : [ "Technology", "Clothes", "Board Games", "Books" ],
-      "averageScore" : 1.5,
+      "averageScore" : 2.1,
       "niceScoreHistory" : [ 2.0, 1.0 ],
-      "assignedBudget" : 6.681222707423581,
+      "assignedBudget" : 8.272727272727275,
       "receivedGifts" : [ ]
     }, {
       "id" : 3,
@@ -130,12 +134,12 @@
       "city" : "Brasov",
       "age" : 13,
       "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
-      "averageScore" : 9.0,
+      "averageScore" : 12.6,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 40.08733624454149,
+      "assignedBudget" : 49.63636363636364,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       } ]
     }, {
@@ -145,9 +149,9 @@
       "city" : "Bucuresti",
       "age" : 15,
       "giftsPreferences" : [ "Technology", "Board Games" ],
-      "averageScore" : 9.0,
+      "averageScore" : 18.0,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 40.08733624454149,
+      "assignedBudget" : 54.545454545454554,
       "receivedGifts" : [ {
         "productName" : "Monopoly",
         "price" : 30.0,
@@ -160,17 +164,13 @@
       "city" : "Braila",
       "age" : 18,
       "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games" ],
-      "averageScore" : 9.0,
+      "averageScore" : 11.7,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 40.08733624454149,
+      "assignedBudget" : 35.45454545454546,
       "receivedGifts" : [ {
         "productName" : "Doll",
         "price" : 10.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     } ]
   }, {
@@ -181,20 +181,16 @@
       "city" : "Oradea",
       "age" : 15,
       "giftsPreferences" : [ "Technology", "Clothes", "Books", "Board Games" ],
-      "averageScore" : 2.6666666666666665,
+      "averageScore" : 2.933333333333333,
       "niceScoreHistory" : [ 5.0, 4.0, 1.0 ],
-      "assignedBudget" : 171.82608695652175,
+      "assignedBudget" : 85.34166666666667,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       } ]
     }, {
@@ -204,20 +200,16 @@
       "city" : "Craiova",
       "age" : 17,
       "giftsPreferences" : [ "Books", "Technology", "Toys", "Board Games" ],
-      "averageScore" : 5.666666666666667,
+      "averageScore" : 7.366666666666667,
       "niceScoreHistory" : [ 6.0, 5.0, 6.0 ],
-      "assignedBudget" : 365.13043478260875,
+      "assignedBudget" : 398.0302083333334,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
         "productName" : "Monopoly",
@@ -231,9 +223,9 @@
       "city" : "Craiova",
       "age" : 12,
       "giftsPreferences" : [ "Technology", "Clothes", "Board Games", "Books" ],
-      "averageScore" : 3.1666666666666665,
+      "averageScore" : 4.433333333333334,
       "niceScoreHistory" : [ 2.0, 1.0, 5.0 ],
-      "assignedBudget" : 204.04347826086956,
+      "assignedBudget" : 239.5385416666667,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
@@ -246,10 +238,6 @@
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 3,
@@ -258,20 +246,16 @@
       "city" : "Brasov",
       "age" : 14,
       "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
-      "averageScore" : 6.333333333333333,
+      "averageScore" : 8.866666666666667,
       "niceScoreHistory" : [ 9.0, 5.0 ],
-      "assignedBudget" : 408.0869565217391,
+      "assignedBudget" : 479.0770833333334,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -281,20 +265,16 @@
       "city" : "Bucuresti",
       "age" : 16,
       "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
-      "averageScore" : 9.0,
+      "averageScore" : 18.0,
       "niceScoreHistory" : [ 9.0 ],
-      "assignedBudget" : 579.9130434782609,
+      "assignedBudget" : 748.125,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     } ]
@@ -306,17 +286,13 @@
       "city" : "Oradea",
       "age" : 16,
       "giftsPreferences" : [ "Toys", "Books", "Technology", "Clothes", "Board Games" ],
-      "averageScore" : 2.6666666666666665,
+      "averageScore" : 2.933333333333333,
       "niceScoreHistory" : [ 5.0, 4.0, 1.0 ],
-      "assignedBudget" : 60.646425073457394,
+      "assignedBudget" : 30.16474756421612,
       "receivedGifts" : [ {
-        "productName" : "Doll",
-        "price" : 10.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
+        "productName" : "Bike",
         "price" : 25.0,
-        "category" : "Books"
+        "category" : "Toys"
       } ]
     }, {
       "id" : 1,
@@ -325,21 +301,17 @@
       "city" : "Craiova",
       "age" : 18,
       "giftsPreferences" : [ "Toys", "Board Games", "Books", "Technology" ],
-      "averageScore" : 6.6,
+      "averageScore" : 8.58,
       "niceScoreHistory" : [ 6.0, 5.0, 6.0, 8.0 ],
-      "assignedBudget" : 150.09990205680705,
+      "assignedBudget" : 163.859218018474,
       "receivedGifts" : [ {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 2,
@@ -348,16 +320,16 @@
       "city" : "Craiova",
       "age" : 13,
       "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games", "Clothes" ],
-      "averageScore" : 5.1,
+      "averageScore" : 7.14,
       "niceScoreHistory" : [ 2.0, 1.0, 5.0, 8.0 ],
-      "assignedBudget" : 115.98628795298727,
+      "assignedBudget" : 136.35837023914968,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       } ]
     }, {
@@ -367,20 +339,12 @@
       "city" : "Brasov",
       "age" : 15,
       "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
-      "averageScore" : 7.666666666666667,
+      "averageScore" : 10.733333333333334,
       "niceScoreHistory" : [ 9.0, 5.0, 9.0 ],
-      "assignedBudget" : 174.35847208619003,
+      "assignedBudget" : 204.98317094774137,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -390,13 +354,13 @@
       "city" : "Bucuresti",
       "age" : 17,
       "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
-      "averageScore" : 5.0,
+      "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0, 3.0 ],
-      "assignedBudget" : 113.71204701273263,
+      "assignedBudget" : 146.90623813741615,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 6,
@@ -405,17 +369,17 @@
       "city" : "Braila",
       "age" : 13,
       "giftsPreferences" : [ "Technology", "Clothes", "Books", "Board Games" ],
-      "averageScore" : 7.0,
+      "averageScore" : 13.3,
       "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 159.19686581782568,
+      "assignedBudget" : 254.00088573959258,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
       } ]
     } ]
   } ]

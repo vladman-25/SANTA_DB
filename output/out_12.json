@@ -58,10 +58,6 @@
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 1,
@@ -74,10 +70,6 @@
       "niceScoreHistory" : [ 6.0, 0.0 ],
       "assignedBudget" : 648.4090909090908,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"

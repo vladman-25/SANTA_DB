@@ -55,10 +55,6 @@
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 520.8,
       "receivedGifts" : [ {
-        "productName" : "Milk and Cookies",
-        "price" : 30.0,
-        "category" : "Sweets"
-      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
@@ -99,10 +95,6 @@
       "niceScoreHistory" : [ 7.0, 2.0 ],
       "assignedBudget" : 381.91999999999996,
       "receivedGifts" : [ {
-        "productName" : "Milk and Cookies",
-        "price" : 30.0,
-        "category" : "Sweets"
-      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"

@@ -7,9 +7,9 @@
       "city" : "Timisoara",
       "age" : 5,
       "giftsPreferences" : [ "Board Games", "Toys" ],
-      "averageScore" : 4.0,
+      "averageScore" : 5.6,
       "niceScoreHistory" : [ 4.0 ],
-      "assignedBudget" : 443.5,
+      "assignedBudget" : 400.58064516129036,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,
@@ -26,9 +26,9 @@
       "city" : "Cluj-Napoca",
       "age" : 18,
       "giftsPreferences" : [ "Sweets", "Technology", "Toys" ],
-      "averageScore" : 4.0,
+      "averageScore" : 6.8,
       "niceScoreHistory" : [ 4.0 ],
-      "assignedBudget" : 443.5,
+      "assignedBudget" : 486.41935483870975,
       "receivedGifts" : [ {
         "productName" : "Bag of Candy",
         "price" : 20.0,
@@ -47,7 +47,7 @@
       "city" : "Timisoara",
       "age" : 6,
       "giftsPreferences" : [ "Clothes", "Board Games", "Toys" ],
-      "averageScore" : 6.0,
+      "averageScore" : 8.4,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 814.0,
       "receivedGifts" : [ {
@@ -72,9 +72,9 @@
       "city" : "Timisoara",
       "age" : 7,
       "giftsPreferences" : [ "Clothes", "Board Games", "Toys" ],
-      "averageScore" : 6.666666666666667,
+      "averageScore" : 9.333333333333334,
       "niceScoreHistory" : [ 4.0, 8.0, 8.0 ],
-      "assignedBudget" : 71.05263157894737,
+      "assignedBudget" : 62.58278145695365,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,
@@ -91,9 +91,9 @@
       "city" : "Braila",
       "age" : 10,
       "giftsPreferences" : [ "Sweets" ],
-      "averageScore" : 6.0,
+      "averageScore" : 10.8,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 63.94736842105263,
+      "assignedBudget" : 94.14238410596028,
       "receivedGifts" : [ {
         "productName" : "Bag of Candy",
         "price" : 20.0,
@@ -108,12 +108,12 @@
       "city" : "Timisoara",
       "age" : 8,
       "giftsPreferences" : [ "Toys", "Clothes", "Board Games" ],
-      "averageScore" : 5.25,
+      "averageScore" : 7.35,
       "niceScoreHistory" : [ 4.0, 8.0, 8.0, 1.0 ],
-      "assignedBudget" : 413.93333333333334,
+      "assignedBudget" : 359.198347107438,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Handbag",
@@ -131,12 +131,12 @@
       "city" : "Braila",
       "age" : 11,
       "giftsPreferences" : [ "Toys", "Sweets" ],
-      "averageScore" : 6.0,
+      "averageScore" : 10.8,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 473.0666666666667,
+      "assignedBudget" : 686.1421487603307,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Bag of Candy",
@@ -152,9 +152,9 @@
       "city" : "Timisoara",
       "age" : 9,
       "giftsPreferences" : [ "Board Games", "Clothes", "Toys" ],
-      "averageScore" : 5.25,
+      "averageScore" : 7.35,
       "niceScoreHistory" : [ 4.0, 8.0, 8.0, 1.0 ],
-      "assignedBudget" : 269.95652173913044,
+      "assignedBudget" : 263.41212121212124,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,
@@ -164,8 +164,8 @@
         "price" : 200.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       } ]
     }, {
@@ -175,16 +175,16 @@
       "city" : "Braila",
       "age" : 12,
       "giftsPreferences" : [ "Clothes", "Toys", "Sweets" ],
-      "averageScore" : 6.0,
+      "averageScore" : 10.8,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 308.52173913043475,
+      "assignedBudget" : 503.17090909090916,
       "receivedGifts" : [ {
         "productName" : "Handbag",
         "price" : 200.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Bag of Candy",
@@ -198,9 +198,9 @@
       "city" : "Braila",
       "age" : 14,
       "giftsPreferences" : [ "Board Games", "Clothes" ],
-      "averageScore" : 6.0,
+      "averageScore" : 6.6,
       "niceScoreHistory" : [ 6.0 ],
-      "assignedBudget" : 308.52173913043475,
+      "assignedBudget" : 236.53333333333333,
       "receivedGifts" : [ {
         "productName" : "Uno",
         "price" : 10.0,

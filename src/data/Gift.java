@@ -4,6 +4,7 @@ public final class Gift {
     private String productName;
     private Double price;
     private String category;
+    private int quantity;
 
     public String getProductName() {
         return productName;
@@ -31,10 +32,20 @@ public final class Gift {
 
     public Gift(final String productName,
                 final Double price,
-                final String category) {
+                final String category,
+                final int quantity) {
         this.productName = productName;
         this.price = price;
         this.category = category;
+        this.quantity = quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     @Override
