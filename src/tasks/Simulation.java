@@ -16,10 +16,7 @@ import strategyGifts.IdStrategy;
 import strategyGifts.NiceScoreCityStrategy;
 import strategyGifts.NiceScoreStrategy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public final class Simulation {
@@ -105,18 +102,26 @@ public final class Simulation {
             if (yearNumber == 0) {
                 finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
             } else {
-                if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("id")) {
-                    finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
-                } else if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("niceScore")) {
-                    finalGifts_og = new NiceScoreStrategy().getGiftsByStrategy(budgetMap);
-                } else if (Database.getDatabase().getAnnualChanges().get(yearNumber-1).getStrategy().equals("niceScoreCity")) {
-                    finalGifts_og = new NiceScoreCityStrategy().getGiftsByStrategy(budgetMap);
-                } else {
-                    finalGifts_og = new IdStrategy().getGiftsByStrategy(budgetMap);
-                }
+                finalGifts_og = switch (Database.getDatabase().getAnnualChanges().get(yearNumber - 1).getStrategy()) {
+                    case "niceScore" -> new NiceScoreStrategy().getGiftsByStrategy(budgetMap);
+                    case "niceScoreCity" -> new NiceScoreCityStrategy().getGiftsByStrategy(budgetMap);
+                    default -> new IdStrategy().getGiftsByStrategy(budgetMap);
+                };
 
             }
 
+            // yellow elf
+            for (Child child : Database.getDatabase().getInitialChildren()) {
+                if(child.getElf().equals("yellow") && (finalGifts_og.get(child.getId()).size() == 0)) {
+                    ArrayList<Gift> auxGiftList = new ArrayList<Gift>();
+                    Gift auxGift = yellowElfGifts(child);
+                    if (auxGift != null) {
+                        auxGiftList.add(auxGift);
+                    }
+                    finalGifts_og.put(child.getId(),auxGiftList);
+                }
+            }
+            //
 
             HashMap<Integer, ArrayList<ResultGift>> finalGifts = new HashMap<Integer, ArrayList<ResultGift>>();
             for (Map.Entry<Integer, ArrayList<Gift>> entry : finalGifts_og.entrySet()) {
@@ -254,5 +259,30 @@ public final class Simulation {
         Database.getDatabase().setInitialGifts(tempGifts);
     }
 
+    public static Gift yellowElfGifts(Child child) {
+        ArrayList<Gift> tempGiftsByPreference = new ArrayList<Gift>();
+            for (Gift gift : Database.getDatabase().getInitialGifts()) {
+                if (Objects.equals(gift.getCategory(), child.getGiftsPreferences().get(0))) {
+                    tempGiftsByPreference.add(gift);
+                }
+            }
 
+        tempGiftsByPreference.sort((o1, o2) -> {
+            if (Double.compare(o1.getPrice(), o2.getPrice()) > 0) {
+                return 1;
+            }
+            if (Double.compare(o1.getPrice(), o2.getPrice()) < 0) {
+                return -1;
+            }
+            return 0;
+        });
+
+        if(tempGiftsByPreference.size() != 0) {
+            if(tempGiftsByPreference.get(0).getQuantity() != 0) {
+                tempGiftsByPreference.get(0).setQuantity(tempGiftsByPreference.get(0).getQuantity() - 1);
+                return tempGiftsByPreference.get(0);
+            }
+        }
+        return null;
+    }
 }

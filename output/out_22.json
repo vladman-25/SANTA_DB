@@ -470,7 +470,11 @@
       "averageScore" : 3.6,
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 12.104975396391472,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      } ]
     }, {
       "id" : 6,
       "lastName" : "Ionescu",

@@ -45,6 +45,12 @@ public class NiceScoreCityStrategy implements GiftsStrategy{
             if (Double.compare(cityScoreMap.get(o1.getCity()), cityScoreMap.get(o2.getCity())) > 0) {
                 return -1;
             }
+            if (o1.getCity().compareTo(o2.getCity()) < 0) {
+                return -1;
+            }
+            if (o1.getCity().compareTo(o2.getCity()) > 0) {
+                return 1;
+            }
             return (Integer.compare(o1.getId(), o2.getId()));
         });
         HashMap<Integer, ArrayList<Gift>> giftsMap = new HashMap<Integer, ArrayList<Gift>>();

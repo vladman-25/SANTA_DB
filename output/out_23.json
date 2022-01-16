@@ -100,7 +100,11 @@
       "averageScore" : 4.766666666666667,
       "niceScoreHistory" : [ 5.0, 4.0 ],
       "assignedBudget" : 18.50076103500761,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      } ]
     }, {
       "id" : 1,
       "lastName" : "Ionescu",
@@ -273,10 +277,6 @@
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 360.20833333333326,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
