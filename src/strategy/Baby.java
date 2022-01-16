@@ -6,8 +6,11 @@ import java.util.ArrayList;
 
 public final class Baby implements CalculateNiceScoreStrategy {
     private ArrayList<Double> niceScores;
-    public Baby(final ArrayList<Double> niceScores) {
+    private int niceBonus;
+    public Baby(final ArrayList<Double> niceScores,
+               final int niceBonus) {
         this.niceScores = niceScores;
+        this.niceBonus = niceBonus;
     }
 
     @Override

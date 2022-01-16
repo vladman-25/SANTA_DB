@@ -9,9 +9,7 @@ import result.Result;
 import result.ResultArray;
 import result.ResultChildren;
 import result.ResultGift;
-import strategy.Baby;
-import strategy.Kid;
-import strategy.Teen;
+import strategy.StrategyFactory;
 import strategyGifts.IdStrategy;
 import strategyGifts.NiceScoreCityStrategy;
 import strategyGifts.NiceScoreStrategy;
@@ -234,22 +232,9 @@ public final class Simulation {
     public static void calculateAvgScore() {
         for (int i = 0; i < Database.getDatabase().getInitialChildren().size(); i++) {
             Child tempChild = Database.getDatabase().getInitialChildren().get(i);
-            ArrayList<Double> tempScoresList = Database.getDatabase()
-                    .getScores().get(tempChild.getId());
-            Integer tempBonus = tempChild.getNiceScoreBonus();
-
-            if (Utils.getChildAgeEnum(tempChild) == Ages.BABY) {
-                Double score = new Baby(tempScoresList).getNiceScore();
-                Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
-            }
-            if (Utils.getChildAgeEnum(tempChild) == Ages.KID) {
-                Double score = new Kid(tempScoresList, tempBonus).getNiceScore();
-                Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
-            }
-            if (Utils.getChildAgeEnum(tempChild) == Ages.TEEN) {
-                Double score = new Teen(tempScoresList, tempBonus).getNiceScore();
-                Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
-            }
+            StrategyFactory strategyFactory = new StrategyFactory();
+            Double score = strategyFactory.createStrategy(i);
+            Database.getDatabase().getAvgScores().put(tempChild.getId(), score);
         }
     }
 
